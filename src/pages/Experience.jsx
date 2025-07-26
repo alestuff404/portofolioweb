@@ -11,7 +11,7 @@ const Experience = () => {
   };
 
   return (
-    <div className="flex bg-[#FFF2E1] dark:bg-gray-900">
+    <div className="flex bg-[#FFF2E1]">
       
       {/* Sidebar */}
       <div

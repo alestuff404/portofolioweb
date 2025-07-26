@@ -12,7 +12,7 @@ const About = () => {
   };
 
   return (
-    <div className="flex bg-[#FFF2E1] dark:bg-gray-900 relative overflow-hidden">
+    <div className="flex bg-[#FFF2E1] relative overflow-hidden">
 
       {/* 🔳 Background Transparan */}
       {/* <img
