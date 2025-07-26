@@ -7,13 +7,7 @@ import { FaRegNewspaper, FaLaptopCode, FaFloppyDisk } from "react-icons/fa6";
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 
 export default function Navbar({ onToggleSidebar, isSidebarVisible }) {
-  const [darkMode, setDarkMode] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-    document.documentElement.classList.toggle("dark");
-  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -95,10 +89,6 @@ export default function Navbar({ onToggleSidebar, isSidebarVisible }) {
           <FaFloppyDisk className="text-xl" />
           About Me
         </NavLink>
-
-        <button onClick={toggleDarkMode}>
-          <FaMoon className="text-lg hover:bg-[#EAD8C0] rounded-md" />
-        </button>
 
         <a
           href="https://github.com/"
