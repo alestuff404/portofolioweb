@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Navbar from '../components/Navbar';
-import Sidebar from '../components/SideBar';
+import Sidebar from '../components/Sidebar';
 import Event from '../components/Event';
 
 const Experience = () => {

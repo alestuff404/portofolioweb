@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <>
       {/* Hero Section */}
-      <div className="bg-[#EAD8C0] dark:bg-gray-900 text-gray-800 dark:text-white shadow border border-gray-200 dark:border-gray-700 rounded-xl mx-6 md:mx-10 my-2 p-6">
+      <div className="bg-[#EAD8C0]  text-gray-800  shadow border border-gray-200  rounded-xl mx-6 md:mx-10 my-2 p-6">
         <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-6">
           {/* Kiri: Teks */}
           <div className="w-full md:w-2/3 text-black space-y-3 pl-4 pr-4">
@@ -33,7 +33,7 @@ const Header = () => {
               getting lost in thriller-action, romance-comedy, fantasy movies. And hey, thanks for stopping by and reading
               this. It means a lot. Yes, you. I like you already 🫣
             </p>
-            <p className="text-sm text-[#85603F] dark:text-gray-300">
+            <p className="text-sm text-[#85603F] ">
               Ssstt, this isn't just a portfolio. It's a quiet piece of me.
             </p>
             <div className="flex gap-6 pt-3">
@@ -64,7 +64,7 @@ const Header = () => {
         {/* Experience Section */}
         <div className="min-w-0">
           <div className="flex justify-between items-center mb-1">
-            <h2 className="text-4xl font-bold text-black dark:text-white ml-2">Experience</h2>
+            <h2 className="text-4xl font-bold text-black  ml-2">Experience</h2>
             <Link
               to="/experience"
               className="text-sm text-[#85603F] hover:underline hover:text-blue-700 transition mt-2"
@@ -72,11 +72,11 @@ const Header = () => {
               See All →
             </Link>
           </div>
-          <p className="text-[#85603F] dark:text-gray-300 mb-4 ml-2">
+          <p className="text-[#85603F]  mb-4 ml-2">
             Life, collaboration, projects, and everything else
           </p>
-          <div className="divide-y divide-[#85603F] dark:divide-gray-700">
-            <div className="py-3 group hover:bg-[#EAD8C0] dark:hover:bg-gray-800 px-2 rounded transition">
+          <div className="divide-y divide-[#85603F] ">
+            <div className="py-3 group hover:bg-[#EAD8C0]  px-2 rounded transition">
               <Link
                 to="/experience#ai-workshop"
                 className="text-[#124076] font-medium underline group-hover:text-blue-800 transition"
@@ -85,7 +85,7 @@ const Header = () => {
               </Link>
               <p className="text-xs text-[#85603F]">Since June 2025</p>
             </div>
-            <div className="py-3 group hover:bg-[#EAD8C0] dark:hover:bg-gray-800 px-2 rounded transition">
+            <div className="py-3 group hover:bg-[#EAD8C0]  px-2 rounded transition">
               <Link
                 to="/experience#sponsorship"
                 className="text-[#124076] font-medium underline group-hover:text-blue-800 transition"
@@ -94,7 +94,7 @@ const Header = () => {
               </Link>
               <p className="text-xs text-[#85603F]">July 2025</p>
             </div>
-            <div className="py-3 group hover:bg-[#EAD8C0] dark:hover:bg-gray-800 px-2 rounded transition">
+            <div className="py-3 group hover:bg-[#EAD8C0]  px-2 rounded transition">
               <Link
                 to="/experience#internship"
                 className="text-[#124076] font-medium underline group-hover:text-blue-800 transition"
@@ -109,26 +109,26 @@ const Header = () => {
         </div>
 
         {/* Short-Term Goals Section */}
-        <div className="md:border-l border-[#85603F] dark:border-gray-700 pl-6 md:pl-10 min-w-0">
-          <h2 className="text-4xl font-bold text-black dark:text-white mb-1 ml-2">Short-Term Goals:</h2>
-          <p className="text-[#85603F] dark:text-gray-300 mb-4 ml-2">
+        <div className="md:border-l border-[#85603F]  pl-6 md:pl-10 min-w-0">
+          <h2 className="text-4xl font-bold text-black  mb-1 ml-2">Short-Term Goals:</h2>
+          <p className="text-[#85603F]  mb-4 ml-2">
             I don’t have it all figured out, but i’m building my future
           </p>
-          <div className="divide-y divide-[#85603F] dark:divide-gray-700">
-            <div className="py-3 hover:bg-[#EAD8C0] dark:hover:bg-gray-800 px-2 rounded transition">
-              <p className="font-medium text-gray-800 dark:text-gray-200">Build my first real AI project</p>
+          <div className="divide-y divide-[#85603F] ">
+            <div className="py-3 hover:bg-[#EAD8C0]  px-2 rounded transition">
+              <p className="font-medium text-gray-800 ">Build my first real AI project</p>
               <p className="text-xs text-[#85603F]">
                 Something simple, helpful, and working. Even if it’s messy at first.
               </p>
             </div>
-            <div className="py-3 hover:bg-[#EAD8C0] dark:hover:bg-gray-800 px-2 rounded transition">
-              <p className="font-medium text-gray-800 dark:text-gray-200">Become a Beasiswa Unggulan awardee</p>
+            <div className="py-3 hover:bg-[#EAD8C0]  px-2 rounded transition">
+              <p className="font-medium text-gray-800 ">Become a Beasiswa Unggulan awardee</p>
               <p className="text-xs text-[#85603F]">
                 So i can grow not only as a student, but as someone who contributes back to Indonesia through technology.
               </p>
             </div>
-            <div className="py-3 hover:bg-[#EAD8C0] dark:hover:bg-gray-800 px-2 rounded transition">
-              <p className="font-medium text-gray-800 dark:text-gray-200">Participate in the Huawei ICT Competition</p>
+            <div className="py-3 hover:bg-[#EAD8C0]  px-2 rounded transition">
+              <p className="font-medium text-gray-800 ">Participate in the Huawei ICT Competition</p>
               <p className="text-xs text-[#85603F]">
                 To challenge myself, connect with like-minded learners, and explore real-world tech problems.
               </p>
@@ -139,8 +139,8 @@ const Header = () => {
 
       {/* Section: What I'm learning Now */}
       <div className="px-6 md:px-10 pb-20 pt-5 ml-8 mr-8">
-        <h2 className="text-4xl font-bold text-black dark:text-white mb-1 ml-2">What I'm learning Now</h2>
-        <p className="text-[#85603F] dark:text-gray-300 mb-8 ml-2">
+        <h2 className="text-4xl font-bold text-black  mb-1 ml-2">What I'm learning Now</h2>
+        <p className="text-[#85603F]  mb-8 ml-2">
           Building the foundation; Pieces of knowledge, slowly forming something bigger.
         </p>
 
@@ -213,8 +213,8 @@ const Header = () => {
 
       {/* Section: What Will I learn Next */}
       <div className="px-6 md:px-10 pb-20 pt-5 ml-8 mr-8">
-        <h2 className="text-4xl font-bold text-black dark:text-white mb-1 ml-2">What Will I learn Next</h2>
-        <p className="text-[#85603F] dark:text-gray-300 mb-8 ml-2">
+        <h2 className="text-4xl font-bold text-black  mb-1 ml-2">What Will I learn Next</h2>
+        <p className="text-[#85603F]  mb-8 ml-2">
           Here's what’s waiting on my roadmap; I don’t rush it — but i make sure i grow.
         </p>
 

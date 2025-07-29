@@ -24,9 +24,9 @@ export default function Navbar({ onToggleSidebar, isSidebarVisible }) {
         px-6 py-4 flex justify-between items-center
         transition-all duration-300
         ${scrolled
-          ? "bg-[#FFF2E1]/40 dark:bg-gray-900/30 backdrop-blur-md shadow-lg border-[#d1bb9e]"
-          : "bg-[#FFF2E1] dark:bg-gray-900 shadow-sm"}
-        text-gray-800 dark:text-white
+          ? "bg-[#FFF2E1]/40 backdrop-blur-md shadow-lg border-[#d1bb9e]"
+          : "bg-[#FFF2E1]  shadow-sm"}
+        text-gray-800 
       `}
       style={{ marginLeft: isSidebarVisible ? "16rem" : "0" }} // 16rem = w-64
     >

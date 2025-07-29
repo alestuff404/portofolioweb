@@ -5,18 +5,18 @@ const AboutNanda = () => {
   return (
     <>
       {/* Section: About Nanda */}
-        <section className="bg-[#EAD8C0] dark:bg-gray-900 text-gray-800 dark:text-white shadow border border-gray-200 dark:border-gray-700 rounded-xl mx-6 md:mx-10 my-2 p-6">
+        <section className="bg-[#EAD8C0]  text-gray-800  shadow border border-gray-200  rounded-xl mx-6 md:mx-10 my-2 p-6">
 
         <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-x-4 gap-y-6">
 
           {/* Kiri: Teks */}
           <div className="md:w-3/4 pl-10 pt-6">
-            <p className="text-md text-black dark:text-gray-300 mb-1">
-              👋 <span className="text-md text-black underline decoration-[#876445] dark:text-gray-300 mb-1">
+            <p className="text-md text-black  mb-1">
+              👋 <span className="text-md text-black underline decoration-[#876445]  mb-1">
                 Hi, I'm Nanda Valeri !
               </span>
             </p> 
-            <h1 className="text-2xl md:text-3xl font-extrabold text-gray-900 dark:text-white leading-tight pb-2">
+            <h1 className="text-2xl md:text-3xl font-extrabold text-gray-900  leading-tight pb-2">
               Informatics student with
               <span className="text-[#876445]"> a growing passion for artificial intelligence,</span> currently studying and exploring intelligent systems.
             </h1>
@@ -55,13 +55,13 @@ const AboutNanda = () => {
 
       {/* Section: What I'm Doing Now*/}
       <div id="now-section" className="max-w-7xl mx-auto px-10 pt-6 mt-6">
-        <h2 className="text-4xl font-bold text-gray-800 dark:text-white border-b border-[#85603F5] pb-2 mb-4">
+        <h2 className="text-4xl font-bold text-gray-800  border-b border-[#85603F5] pb-2 mb-4">
           What I'm Doing Now
         </h2>
-        <p className="text-sm underline text-gray-700 dark:text-gray-400 mb-4">
+        <p className="text-sm underline text-gray-700  mb-4">
           Updated July 25, 2025
         </p>
-        <ul className="list-disc pl-5 space-y-1 text-black dark:text-white text-md">
+        <ul className="list-disc pl-5 space-y-1 text-black  text-md">
           <li className='bg-[#D1BB9E] rounded-sm'>Developing personal portfolio using React + Tailwind CSS</li>
           <li className='bg-[#EAD8C0] rounded-sm'>Learning Python for AI</li>
           <li className='bg-[#D1BB9E] rounded-sm'>Currently, i'm prepare for my workshop AI (is about computer vision for detecting dresscode in my university) <br />
@@ -73,7 +73,7 @@ const AboutNanda = () => {
       </div>
 
       <div id="now-section" className="max-w-7xl mx-auto px-10 pt-6 mt-6">
-        <h2 className="text-4xl font-bold text-gray-800 dark:text-white border-b border-[#85603F5] pb-2 mb-4">
+        <h2 className="text-4xl font-bold text-gray-800  border-b border-[#85603F5] pb-2 mb-4">
           🧠 Academic Journey
           
         </h2>

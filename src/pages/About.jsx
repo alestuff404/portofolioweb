@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Navbar from '../components/Navbar';
-import Sidebar from '../components/SideBar';
+import Sidebar from '../components/Sidebar';
 import Biography from '../components/Biography';
 // import aboutBg from '../assets/bgforaboutme2.png'; 
 

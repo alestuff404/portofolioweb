@@ -6,7 +6,7 @@ export default function Sidebar() {
   return (
     <aside className="h-full flex flex-col text-black bg-[#EAD8C0]">
       {/* Sidebar header */}
-      <div className="flex justify-between items-center p-5 shadow-sm dark:border-gray-700">
+      <div className="flex justify-between items-center p-5 shadow-sm ">
         <Link
           to="/"
           className="flex items-center gap-2 font-bold text-lg hover:underline hover:decoration-[#876445] transition duration-100"
@@ -18,7 +18,7 @@ export default function Sidebar() {
       </div>
 
       {/* Konten sidebar */}
-      <div className="p-6 text-sm space-y-4 text-black dark:text-white">
+      <div className="p-6 text-sm space-y-4 text-black ">
         <section>
           <h2 className="font-semibold mb-2">About Me Rawr</h2>
           <p>
