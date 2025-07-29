@@ -2,8 +2,8 @@ import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Experience from "./pages/Experience";
 import FutureGoals from "./pages/FutureGoals";
-
 import About from "./pages/About";
+
 
 function App() {
   return (
