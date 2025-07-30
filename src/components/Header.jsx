@@ -12,6 +12,7 @@ import nodejsIcon from '../assets/nodejslogo.png';
 import NumPyIcon from '../assets/NumPylogo.png';
 import phpIcon from '../assets/phplogo.png';
 import laravelIcon from '../assets/laravellogo.png';
+import { FaGithub, FaLinkedinIn, FaWhatsapp, FaInstagram } from "react-icons/fa";
 
 const Header = () => {
   return (
@@ -42,7 +43,15 @@ const Header = () => {
                   📍 Let's Know About Me More
                 </button>
               </Link>
-              <button className="flex items-center justify-center gap-2 px-6 py-3 bg-[#876445] hover:bg-[#A79277] text-white rounded-3xl shadow text-md transition duration-300">
+              <button
+                onClick={() => {
+                  const footer = document.getElementById('footer');
+                  if (footer) {
+                    footer.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+                className="flex items-center justify-center gap-2 px-6 py-3 bg-[#876445] hover:bg-[#A79277] text-white rounded-3xl shadow text-md transition duration-300"
+              >
                 📬 Contacts
               </button>
             </div>
@@ -104,20 +113,7 @@ const Header = () => {
             I don’t have it all figured out, but I’m building my future
           </p>
           <div className="divide-y divide-[#85603F]">
-            {[
-              {
-                title: "Build my first real AI project",
-                desc: "Something simple, helpful, and working. Even if it’s messy at first."
-              },
-              {
-                title: "Become a Beasiswa Unggulan awardee",
-                desc: "So I can grow not only as a student, but as someone who contributes back to Indonesia through technology."
-              },
-              {
-                title: "Participate in the Huawei ICT Competition",
-                desc: "To challenge myself, connect with like-minded learners, and explore real-world tech problems."
-              }
-            ].map((item, i) => (
+            {[{title:"Build my first real AI project",desc:"Something simple, helpful, and working. Even if it’s messy at first."},{title:"Become a Beasiswa Unggulan awardee",desc:"So I can grow not only as a student, but as someone who contributes back to Indonesia through technology."},{title:"Participate in the Huawei ICT Competition",desc:"To challenge myself, connect with like-minded learners, and explore real-world tech problems."}].map((item, i) => (
               <div key={i} className="py-3 hover:bg-[#EAD8C0] px-2 rounded transition">
                 <p className="font-medium text-gray-800">{item.title}</p>
                 <p className="text-xs text-[#85603F]">{item.desc}</p>
@@ -131,29 +127,58 @@ const Header = () => {
       <SectionGrid
         title="What I'm learning Now"
         subtitle="Building the foundation; Pieces of knowledge, slowly forming something bigger."
-        items={[
-          { icon: jsIcon, title: "JavaScript", link: "/deepdives/javascript", description: "Understanding how the web thinks, behaves, and connects." },
-          { icon: reactIcon, title: "React", link: "/deepdives/react", description: "Building interactive user interfaces with reusable components." },
-          { icon: cIcon, title: "C", link: "/deepdives/c", description: "Understanding how programs work at their core." },
-          { icon: pythonIcon, title: "Python", link: "/deepdives/python", description: "Writing clean code for data, automation, and future AI dreams." },
-          { icon: tailwindIcon, title: "Tailwind CSS", link: "/deepdives/tailwindcss", description: "Writing beautiful UI faster with utility-first styling." },
-          { icon: linuxIcon, title: "Linux", link: "/deepdives/linux", description: "How real developers talk to their machines." }
-        ]}
+        items={[{icon:jsIcon,title:"JavaScript",link:"/deepdives/javascript",description:"Understanding how the web thinks, behaves, and connects."},{icon:reactIcon,title:"React",link:"/deepdives/react",description:"Building interactive user interfaces with reusable components."},{icon:cIcon,title:"C",link:"/deepdives/c",description:"Understanding how programs work at their core."},{icon:pythonIcon,title:"Python",link:"/deepdives/python",description:"Writing clean code for data, automation, and future AI dreams."},{icon:tailwindIcon,title:"Tailwind CSS",link:"/deepdives/tailwindcss",description:"Writing beautiful UI faster with utility-first styling."},{icon:linuxIcon,title:"Linux",link:"/deepdives/linux",description:"How real developers talk to their machines."}]
+        }
       />
 
       {/* Learning Next */}
       <SectionGrid
         title="What Will I learn Next"
         subtitle="Here's what’s waiting on my roadmap; I don’t rush it — but I make sure I grow."
-        items={[
-          { icon: laravelIcon, title: "Laravel", link: "/deepdives/laravel", description: "Elegant PHP framework for backend." },
-          { icon: mysqlIcon, title: "MySQL", link: "/deepdives/mysql", description: "Managing and querying structured data." },
-          { icon: phpIcon, title: "PHP", link: "/deepdives/php", description: "Classic server-side scripting." },
-          { icon: NumPyIcon, title: "NumPy", link: "/deepdives/numpy", description: "Numerical computing in Python." },
-          { icon: tensorflowIcon, title: "TensorFlow", link: "/deepdives/tensorflow", description: "Deep learning framework." },
-          { icon: nodejsIcon, title: "Node.js", link: "/deepdives/nodejs", description: "Server-side JS for full-stack." }
-        ]}
+        items={[{icon:laravelIcon,title:"Laravel",link:"/deepdives/laravel",description:"Elegant PHP framework for backend."},{icon:mysqlIcon,title:"MySQL",link:"/deepdives/mysql",description:"Managing and querying structured data."},{icon:phpIcon,title:"PHP",link:"/deepdives/php",description:"Classic server-side scripting."},{icon:NumPyIcon,title:"NumPy",link:"/deepdives/numpy",description:"Numerical computing in Python."},{icon:tensorflowIcon,title:"TensorFlow",link:"/deepdives/tensorflow",description:"Deep learning framework."},{icon:nodejsIcon,title:"Node.js",link:"/deepdives/nodejs",description:"Server-side JS for full-stack."}]
+        }
       />
+
+      {/* Footer */}
+      <footer
+        id="footer"
+        className="bg-[#EAD8C0] text-black px-6 py-10 mt-10 rounded-2xl">
+        <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
+          {/* Kiri: Gambar & Sosial Media */}
+          <div className="flex flex-col items-center md:items-start space-y-4">
+            <img
+              src={headerImage}
+              alt="Logo"
+              className="w-20 h-20 object-contain rounded-full"
+            />
+            <div className="flex space-x-4 text-[#85603F]">
+              <a href="https://github.com/alestuff404" target="_blank" rel="noopener noreferrer">
+                <FaGithub className="hover:text-[#A79277] transition" />
+              </a>
+              <a href="https://www.linkedin.com/in/nanda-valeri-a8682534a" target="_blank" rel="noopener noreferrer">
+                <FaLinkedinIn className="hover:text-[#A79277] transition" />
+              </a>
+              <a href="https://www.instagram.com/nandnvr?igsh=MXY2cnkxYXRyMHB5MQ==" target="_blank" rel="noopener noreferrer">
+                <FaInstagram className="hover:text-[#A79277] transition" />
+              </a>
+              <a href="https://wa.me/6287779149122" target="_blank" rel="noopener noreferrer">
+                <FaWhatsapp className="hover:text-[#A79277] transition" />
+              </a>
+            </div>
+          </div>
+
+          {/* Kanan: Tombol Contact Us */}
+          <div className="text-center md:text-right pt-5">
+            <p className="mb-4 text-md text-[#85603F]">↓ get in touch with me ↓</p>
+            <a
+              href="mailto:valerinanda@gmail.com"
+              className="bg-[#876445] px-15 py-2 rounded-full hover:bg-[#A79277] transition text-white"
+            >
+              Email Me
+            </a>
+          </div>
+        </div>
+      </footer>
     </>
   );
 };
